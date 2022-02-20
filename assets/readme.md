@@ -1,0 +1,1 @@
+Assets will contain all the images used in the <strong>component library</strong>.
