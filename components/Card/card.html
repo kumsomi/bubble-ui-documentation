@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble UI | Badge</title>
+    <title>Bubble UI | Card</title>
     <!-- to put the brand icon in the title -->
     <link rel="icon" href="../../assets/bubble-ui-logo.png" type="image/icon type">
 
@@ -26,8 +27,9 @@
             <!-- brand-links -->
             <div class="brand-link h-4 ">
                 <ul class="no-bullet m-1 spaced-list ">
-                    <li><a class="link-btn no-link fw-400 fs-xl" href="Documentation">Documentation</a></li>
-                    <li><a class="link-btn no-link" href="Github">Github</a></li>
+                    <li><a class="link-btn no-link fw-400 fs-l" href="#">Documentation</a></li>
+                    <li><a class="link-btn no-link" target="_blank"
+                            href="https://github.com/kumsomi/bubble-ui-components">Github</a></li>
                 </ul>
             </div>
         </header>
@@ -37,9 +39,9 @@
                 Getting Started
             </h4>
             <ul class="no-bullet para-4">
-                <li><a class="no-link" href="../../getting started/getting-started.html">Introduction</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li>
+                <li><a class="no-link" href="../../introduction.html">Introduction</a></li>
+                <!-- <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
+                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li> -->
             </ul>
             <h4 class="h-4 nav-heading">
                 Component
@@ -49,10 +51,10 @@
                 <li><a class="no-link" href="../avatar/avatar.html">Avatar</a></li>
                 <li><a class="no-link" href="../Badge/badge.html">Badge</a></li>
                 <li><a class="no-link " href="../Button/button.html">Buttons</a></li>
-                <li><a class="no-link " href="../Card/card.html">Cards</a></li>
+                <li class="active"><a class="no-link " href="#">Cards</a></li>
                 <li><a class="no-link " href="../grid/grid.html">Grids</a></li>
                 <li><a class="no-link " href="../image/image.html">Images</a></li>
-                <li class="active"><a class="no-link active " href="#">Inputs</a></li>
+                <li><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
                 <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
@@ -62,12 +64,256 @@
         <!-- Main content -->
         <main>
             <h1 class="heading">
-                ...
+                Cards
             </h1>
             
+            <div class="content">
+                <p class="para-4">
+                    Card displays a product information using text, image and badge.
+                </p>
+                <h3 class="h-3 main-content-subheading">
+                    Text Only Card
+                </h3>
+
+                <!-- Basic card -->
+                <!-- display demo -->
+                <div class="display-demo">
+                    <article class="card basic-card card-shadow">
+                        <h2>Karma</h2>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis doloremque rerum
+                            distinctio nihil consequatur quod amet. Non, aspernatur impedit exercitationem iusto, quibusdam,
+                            at repellendus culpa delectus aut accusamus hic.</p>
+                    </article>
+                </div>
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F302dccc1aebeb18dc69e6c99d46f8a274f090f85%2FComponents%2Fcards%2Fcards.html%23L24-L27&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+                <!-- Horizontal card (start) -->
+                <h3 class="h-3 main-content-subheading">
+                    Horizontal Card
+                </h3>
+
+                <!-- display demo -->
+                <div class="display-demo">
+                    <!-- Card component -->
+                <article class="card horizontal card-shadow">
+                    <!-- Card image -->
+                    <div class="horizontal-card-img--container flex-jc-ac">
+                        <img src="https://picsum.photos/id/30/200/300" alt="coffee cup" class="horizontal-card-img" />
+                    </div>
+
+                    <!-- Horizontal card container -->
+                    <div class="horizontal-card-text--container">
+
+                        <!--Card heading  -->
+                        <p>IKEA Mug</p>
+                        <h1 class="horizontal-card-heading">Coffe Cup for coders</h1>
+
+                        <!-- Price tag -->
+                        <span class="card-price-tag">
+                            <p>Rs 699</p>
+                        </span>
+
+
+                        <!-- card details-->
+                        <div class="horizontal-card-details-container">
+
+                            <!-- Product description -->
+                            <h3>Description</h3>
+                            <div>
+                                <section class="description">
+                                    <ul>
+                                        <li>Made in India.</li>
+                                        <li>Stoneware is used to make this product. </li>
+                                        <li>Microwave safe product</li>
+                                        <li>Measurements: height:11cm, Volume: 25cl</li>
+                                    </ul>
+                                </section>
+                            </div>
+
+                            <!-- card and wishlist buttons -->
+                            <div class="horizontal-card-btn-container flex-ac">
+                                <button class="card-btn card-cart horizintal-card-btn-primary">
+                                    <span class="cart-icon "><i class="fas fa-shopping-cart"></i></span>
+                                    <p class="cart-text">Add to Cart</p>
+                                </button>
+                                <button class="card-btn horizontal-card-btn-secondary">
+                                    <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                    <p class="wishlist-text">Add to wishlist</p>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <!-- Horizontal card (ends) -->
+                </div>
+
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F302dccc1aebeb18dc69e6c99d46f8a274f090f85%2FComponents%2Fcards%2Fcards.html%23L34-L83&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+
+                <!-- Vertical card with a badge(start) -->
+                <h3 class="h-3 main-content-subheading">
+                    Vertical Card with badge
+                </h3>
+                <!-- display demo -->
+                <div class="display-demo">
+                    <article class="card vertical card-shadow">
+
+                        <!-- Card image -->
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://picsum.photos/id/30/200/300" alt="Coffee cup" class="card-image" />
+                        </section>
+    
+                        <!-- Card content -->
+                        <section class="card-content">
+                            <h1 class="card-title">Coffe Cup for coders</h1>
+                            <p class="card-category">IKEA Mug</p>
+                            <span class="card-price-tag">
+                                <p>Rs 699</p>
+                            </span>
+                        </section>
+    
+                        <!-- Card tag -->
+                        <section class="card-tag">
+                            <!-- <span class="card-review"> -->
+                            <span class="icon-btn">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            </span>
+                        </section>
+    
+                        <!-- Add to cart button -->
+                        <button class="card-btn card-cart">
+                            <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                            <p class="cart-text">Add to Cart</p>
+                        </button>
+    
+                    </article>
+                </div>
+                
+                <!-- Vertical card with a badge(end) -->
+
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F302dccc1aebeb18dc69e6c99d46f8a274f090f85%2FComponents%2Fcards%2Fcards.html%23L90-L121&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+                <!-- Text overlay card(start) -->
+                <h3 class="h-3 main-content-subheading">
+                    Text overlay card
+                </h3>
+                <!-- display demo -->
+                <div class="display-demo">
+                    <article class="card vertical card-shadow">
+                        <!-- Overlay text -->
+                        <article class="card-text-overlay flex-jc-ac">
+                            <div class="overlay-text">Out of Stock</div>
+                        </article>
+    
+                        <!-- Card image -->
+                        <section class="card-image-container flex-jc-ac">
+                            <img src="https://picsum.photos/id/30/200/300" alt="Coffee cup" class="card-image" />
+                        </section>
+    
+                        <!-- Card content -->
+                        <section class="card-content">
+                            <h1 class="card-title">Coffe Cup for coders</h1>
+                            <p class="card-category">IKEA Mug</p>
+                            <span class="card-price-tag">
+                                <p>Rs 699</p>
+    
+                            </span>
+                        </section>
+    
+                        <!-- Card-tag -->
+                        <section class="card-tag">
+                            <!-- <span class="card-review"> -->
+                            <span class="icon-btn">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            </span>
+                        </section>
+                    </article>
+                </div>
+                
+                <!-- Text overlay card(end) -->
+
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F302dccc1aebeb18dc69e6c99d46f8a274f090f85%2FComponents%2Fcards%2Fcards.html%23L129-L158&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+
+                <!-- Dismiss card(start) -->
+                <h3 class="h-3 main-content-subheading">
+                    Dismiss Card
+                </h3>
+                <!-- display demo -->
+                <div class="display-demo">
+                    <div class="dismiss-card">
+                        
+                        <article class="card vertical card-shadow">
+    
+                            <!-- Card image -->
+                            <section class="card-image-container flex-jc-ac">
+                                <img src="https://picsum.photos/id/30/200/300" alt="Coffee cup" class="card-image" />
+                            </section>
+    
+                            <!-- Card content -->
+                            <section class="card-content">
+                                <h1 class="card-title">Coffe Cup for coders</h1>
+                                <p class="card-category">IKEA Mug</p>
+                                <span class="card-price-tag">
+                                    <p>Rs 699</p>
+                                </span>
+                            </section>
+    
+                            <!-- Card tag -->
+                            <section class="card-tag">
+                                <!-- <span class="card-review"> -->
+                                <span class="icon-btn">
+                                    <button class="far fa-times-circle cross dismiss-card-btn"></button>
+                                </span>
+                                </span>
+                            </section>
+    
+                            <!-- Add to cart button -->
+                            <button class="card-btn card-cart">
+                                <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                            </button>
+    
+                        </article>
+                    </div>
+                </div>
+                <!--Dismiss Card (|end) -->
+
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F302dccc1aebeb18dc69e6c99d46f8a274f090f85%2FComponents%2Fcards%2Fcards.html%23L165-L199&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+                <script src="https://bubble-ui.netlify.app/Components/cards/src/cards.js"></script>
+            </div>
+
         </main>
-        <!-- Aside bar -->
-        <!-- <aside>What's on this page</aside> -->
+
 
         <!-- footer -->
         <footer class="footer flex flex-direction-col justify-c-ctr">
@@ -86,4 +332,5 @@
     </div>
 </body>
 </body>
+
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble UI | Badge</title>
+    <title>Bubble UI | Toast</title>
     <!-- to put the brand icon in the title -->
     <link rel="icon" href="../../assets/bubble-ui-logo.png" type="image/icon type">
 
@@ -26,8 +27,9 @@
             <!-- brand-links -->
             <div class="brand-link h-4 ">
                 <ul class="no-bullet m-1 spaced-list ">
-                    <li><a class="link-btn no-link fw-400 fs-xl" href="Documentation">Documentation</a></li>
-                    <li><a class="link-btn no-link" href="Github">Github</a></li>
+                    <li><a class="link-btn no-link fw-400 fs-l" href="#">Documentation</a></li>
+                    <li><a class="link-btn no-link" target="_blank"
+                            href="https://github.com/kumsomi/bubble-ui-components">Github</a></li>
                 </ul>
             </div>
         </header>
@@ -37,9 +39,9 @@
                 Getting Started
             </h4>
             <ul class="no-bullet para-4">
-                <li><a class="no-link" href="../../getting started/getting-started.html">Introduction</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li>
+                <li><a class="no-link" href="../../introduction.html">Introduction</a></li>
+                <!-- <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
+                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li> -->
             </ul>
             <h4 class="h-4 nav-heading">
                 Input
@@ -52,18 +54,31 @@
                 <li><a class="no-link " href="../Card/card.html">Cards</a></li>
                 <li><a class="no-link " href="../grid/grid.html">Grids</a></li>
                 <li><a class="no-link " href="../image/image.html">Images</a></li>
-                <li class="active"><a class="no-link active " href="#">Inputs</a></li>
+                <li><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
                 <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
-                <li><a class="no-link " href="../toast/toast.html">Toast</a></li>
+                <li class="active"><a class="no-link " href="../toast/toast.html">Toast</a></li>
             </ul>
         </nav>
         <!-- Main content -->
         <main>
             <h1 class="heading">
-                ...
+                Toast
             </h1>
+            <div class="content">
+                <button id="show-toast" class="btn primary-btn">Show Snackbar</button>
+                <div id="snackbar">
+                    <div class="toast-head">
+                        <h3 class="h-4 toast-heading ">Hi this toast heading</h3>
+                        <button id="toast-close"><i class="fas fa-times"></i></button>
+                    </div>
+                    <p class="para-4">
+                        This is the body of a toast
+                    </p>
+                </div>
+                <script src="https://bubble-ui.netlify.app/Components/toast/src/toast.js"></script>
+            </div>
             
         </main>
 
@@ -84,4 +99,5 @@
         </footer>
     </div>
 </body>
+
 </html>

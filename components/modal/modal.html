@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble UI | Badge</title>
+    <title>Bubble UI | Modal</title>
     <!-- to put the brand icon in the title -->
     <link rel="icon" href="../../assets/bubble-ui-logo.png" type="image/icon type">
 
@@ -26,8 +27,9 @@
             <!-- brand-links -->
             <div class="brand-link h-4 ">
                 <ul class="no-bullet m-1 spaced-list ">
-                    <li><a class="link-btn no-link fw-400 fs-xl" href="Documentation">Documentation</a></li>
-                    <li><a class="link-btn no-link" href="Github">Github</a></li>
+                    <li><a class="link-btn no-link fw-400 fs-l" href="#">Documentation</a></li>
+                    <li><a class="link-btn no-link" target="_blank"
+                            href="https://github.com/kumsomi/bubble-ui-components">Github</a></li>
                 </ul>
             </div>
         </header>
@@ -37,9 +39,9 @@
                 Getting Started
             </h4>
             <ul class="no-bullet para-4">
-                <li><a class="no-link" href="../../getting started/getting-started.html">Introduction</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li>
+                <li><a class="no-link" href="../../introduction.html">Introduction</a></li>
+                <!-- <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
+                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li> -->
             </ul>
             <h4 class="h-4 nav-heading">
                 Input
@@ -52,9 +54,9 @@
                 <li><a class="no-link " href="../Card/card.html">Cards</a></li>
                 <li><a class="no-link " href="../grid/grid.html">Grids</a></li>
                 <li><a class="no-link " href="../image/image.html">Images</a></li>
-                <li class="active"><a class="no-link active " href="#">Inputs</a></li>
+                <li><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
-                <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
+                <li class="active"><a class="no-link " href="../modal/modal.html">Modal</a></li>
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
                 <li><a class="no-link " href="../toast/toast.html">Toast</a></li>
             </ul>
@@ -62,8 +64,69 @@
         <!-- Main content -->
         <main>
             <h1 class="heading">
-                ...
+                Modal
             </h1>
+            <div class="content">
+                <h3 class="h-3 main-content-subheading">Modal button</h3>
+                <!-- <p class="para-4">Buttons can also be used with anchor tags, links or inputs to trigger a functionality. -->
+                </p>
+                <!-- display demo -->
+                <div class="display-demo">
+                    <button id="show-btn" class="btn primary-btn modal-btn">Modal Button</button>
+
+                    <div id="modal">
+                        <div class="modal-container" >
+                            <article class="modal-content card basic-card card-shadow" >
+                                <!-- style="background-color: var(--cta-color); -->
+                              <h2 >Model demo</h2>
+                              <p > Hi this is a model... 
+                                  <!-- style="align-items: flex-start;" -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis doloremque rerum distinctio nihil consequatur quod amet. Non, aspernatur impedit exercitationem iusto, quibusdam, at repellendus culpa delectus aut accusamus hic.</p>
+                              <!-- <div class="flex flex-row " > -->
+                                <button id="close" class="btn primary-btn" style="align-items: flex-end;">Cancel</button>
+                              <!-- </div> -->
+                            </article>
+                          </div>
+                        
+                    </div>
+                </div>
+
+                    <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2Fceb7cc1858e61f2d583f430f4f04c38f69f15076%2FComponents%2Fmodal%2Fmodal.html%23L22-L58&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+                <h3 class="h-3 main-content-subheading">Modal Link</h3>
+                <!-- <p class="para-4">Buttons can also be used with anchor tags, links or inputs to trigger a functionality. -->
+                </p>
+                <!-- display demo -->
+                <div class="display-demo">
+                    <a href="#" id="show-link" class=" modal-link">Modal link</a href="#"></a>
+
+                    <div id="modal">
+                        <div class="modal-container">
+                            <article class="card basic-card card-shadow" style="padding: 20px;">
+                              <h2 >Model demo</h2>
+                              <p style="align-items: flex-start;"> Hi this is a model... 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis doloremque rerum distinctio nihil consequatur quod amet. Non, aspernatur impedit exercitationem iusto, quibusdam, at repellendus culpa delectus aut accusamus hic.</p>
+                              <div class="flex flex-row " >
+                                <button id="close"class="btn outline-btn" style="align-items: flex-end;">Cancel</button>
+                              </div>
+                            </article>
+                          </div>
+
+                </div>
+                
+                </div>
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2Fceb7cc1858e61f2d583f430f4f04c38f69f15076%2FComponents%2Fmodal%2Fmodal.html%23L22-L58&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+            <script src="https://bubble-ui.netlify.app/Components/modal/src/modal.js"></script>
             
         </main>
 
@@ -84,4 +147,5 @@
         </footer>
     </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +27,9 @@
             <!-- brand-links -->
             <div class="brand-link h-4 ">
                 <ul class="no-bullet m-1 spaced-list ">
-                    <li><a class="link-btn no-link fw-400 fs-xl" href="Documentation">Documentation</a></li>
-                    <li><a class="link-btn no-link" href="Github">Github</a></li>
+                    <li><a class="link-btn no-link fw-400 " href="#">Documentation</a></li>
+                    <li><a class="link-btn no-link" target="_blank"
+                            href="https://github.com/kumsomi/bubble-ui-components">Github</a></li>
                 </ul>
             </div>
         </header>
@@ -37,9 +39,9 @@
                 Getting Started
             </h4>
             <ul class="no-bullet para-4">
-                <li><a class="no-link" href="../../getting started/getting-started.html">Introduction</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
-                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li>
+                <li><a class="no-link" href="../../introduction.html">Introduction</a></li>
+                <!-- <li><a class="no-link" href="../../getting started/getting-started.html">Colors</a></li>
+                <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li> -->
             </ul>
             <h4 class="h-4 nav-heading">
                 Input
@@ -62,9 +64,66 @@
         <!-- Main content -->
         <main>
             <h1 class="heading">
-                ...
+                Input
             </h1>
-            
+            <div class="content">
+                <h3 class="h-3 main-content-subheading">Default Input</h3>
+
+                <div class="display-demo">
+                    <!-- default input -->
+                    <div class="input-group">
+                        <label class="text-label flex align-i-ctr" for="">
+                            Name
+                            <input type="text" class="input-text" placeholder="Enter your name here">
+                        </label>
+                        <span class="text-message "></span>
+                    </div>
+                </div>
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F036bd90dc92e97a60f6629697d9722bb46a5c9ba%2FComponents%2Finput-comp%2Finput-comp.html%23L23-L29&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+
+                <h3 class="h-3 main-content-subheading">Error Input</h3>
+
+                <div class="display-demo">
+                    <!-- input error -->
+                    <div class="input-group input-error">
+                        <label class="text-label" for=" ">
+                            Email
+                            <input type="email" id=" " class="input-text" placeholder="Enter your email...">
+                        </label>
+                        <span class="text-message-error ">Incorrect Email</span>
+                    </div>
+                </div>
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F036bd90dc92e97a60f6629697d9722bb46a5c9ba%2FComponents%2Finput-comp%2Finput-comp.html%23L33-L39&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+
+                <h3 class="h-3 main-content-subheading">Success Input</h3>
+
+                <div class="display-demo">
+                    <!-- input success -->
+                    <div class="input-group input-success m-1">
+                        <label class="text-label flex-col" for="input-strong-password">
+                            Password
+                            <input type="password" id=" " class="input-text" placeholder="Enter your password...">
+                        </label>
+                        <span class="text-message-success">Strong Password</span>
+                    </div>
+                </div>
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-components%2Fblob%2F036bd90dc92e97a60f6629697d9722bb46a5c9ba%2FComponents%2Finput-comp%2Finput-comp.html%23L42-L48&style=github&showBorder=on&showCopy=on"></script>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
 
@@ -85,4 +144,5 @@
     </div>
 </body>
 </body>
+
 </html>

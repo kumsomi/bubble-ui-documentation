@@ -6,7 +6,7 @@
 
 :root{
     font-family:sans-serif;
-    font-size:62.5%;
+    /* font-size:62.5%; */
 
 
     /* border radius*/
@@ -20,8 +20,11 @@
     /* colors */
     /* --secondary-color:#41B3E6; */
     /* --secondary-color:#134074; */
-    --primary-color:#08415c;
-    --cta-color:#07529D;
+    /* --primary-color:#08415c; */
+    --primary-color:#07529D;
+    --cta-color:#ADDAF2;
+     /* --cta-color:#ADC698; */
+    /*--cta-color:#FEFFA5; */
 
     /* --primary-color:#41B3E6;  */
     --screen-background-color:#ECF8FD;
