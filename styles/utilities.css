@@ -18,21 +18,13 @@
 
 
     /* colors */
-    /* --secondary-color:#41B3E6; */
-    /* --secondary-color:#134074; */
-    /* --primary-color:#08415c; */
+
     --primary-color:#07529D;
     --cta-color:#ADDAF2;
-     /* --cta-color:#ADC698; */
-    /*--cta-color:#FEFFA5; */
 
-    /* --primary-color:#41B3E6;  */
     --screen-background-color:#ECF8FD;
-    /* --screen-background-color:#E2F3FB; */
     --shadow-color:#ADDAF2;
-    /* --primary-color:#41B3E6; */
     --secondary-color:#ffffff;
-    /* --cta-color:#134074; */
     --other-color:#8ab0ab;
     --black:#020202;
     /* --white:; */
@@ -58,38 +50,6 @@
 	--valid-color: green;
 	--invalid-color: red;
 
-
-    /* Spacing */
-    --space-0-25: 0.25rem;
-    --space-0-5: 0.5rem;
-    --space-0-75: 0.75rem; 
-    --space-1: 1rem;
-    --space-1-5: 1.5rem;
-    --space-2: 2rem;
-    --space-2-5: 2.5rem;
-    --space-3: 3rem;
-    --space-3-5: 3.5rem;
-    --space-4: 4rem;
-    --space-4-5: 4.5rem;
-    --space-5: 5rem;
-    --space-5-5: 5.5rem;
-    --space-6: 6rem;
-    --space-6-5: 6rem;
-
-    /* paddings */
-    --p6:0.2rem;
-    --p5:0.5rem;
-    --p4:1rem;
-    --p3:1.5rem;
-    --p2:2rem;
-    --p1:2.5rem;
-
-    /* media size */
-    --device-l:1200px;
-    --device-m:992px;
-    --device-s:768px;
-    --device-xs:575px;
-    
 }
 
 html,body{

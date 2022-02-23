@@ -246,4 +246,10 @@ footer{
     }
     
 }
+.horizontal-card-img {
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+    /* margin-top: 1rem; */
+}
 
