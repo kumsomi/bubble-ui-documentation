@@ -5,9 +5,7 @@ body {
     /* background-color: var(--screen-background-color); */
     background-color: var(--secondary-color);   
 }
-/* main{
-    font-size:62.5%;
-} */
+
 .main-content-subheading{
     color:var(--primary-color);
 }
@@ -20,6 +18,7 @@ body {
     position: sticky;
     top:0;
     z-index:10;
+    align-items: center;
 }
 
 .header-logo{
@@ -28,9 +27,7 @@ body {
 .social-link{
     margin-top: auto;
 }
-/* .icon-btn span:hover{
-    background-color: var(--primary-color);
-} */
+
 .icon-btn{
     font-size: 3rem;
     margin:2rem;
@@ -46,7 +43,9 @@ body {
     margin-left: auto;
 }
 
-
+.brand{
+    padding: 0 1rem;
+}
 .nav-heading{
     margin-top: 1.5rem;
 }
@@ -67,9 +66,12 @@ main{
     background-color: var(--secondary-color);
 }
 nav{
-    font-size: 10rem;
+    /* font-size: 10rem; */
     border-right: 0.2rem solid var(--screen-background-color);
     /* box-shadow: 0.1rem 0 0 var(--shadow-color); */
+}
+nav.navigation-bar.demo-navigation {
+    z-index: 0;
 }
 .navbar{
     background-color: var(--secondary-color);
@@ -93,7 +95,12 @@ nav{
     border-radius: 1rem;
 
 }
-
+.nav-mobile-heading{
+    display: none;
+}
+.para-4{
+    margin:0 1.5rem;
+}
 .content{
     color:var(--black);
     /* width: 90%; */
@@ -110,6 +117,7 @@ nav{
     margin:0 2rem 2rem;
     padding: 2rem;
     max-width: 100%;
+    overflow-x: auto;
 }
 .code-snippet-container{
     margin:0 1rem 1rem;
@@ -168,9 +176,9 @@ header{
     display: flex;
     justify-content: space-between; 
 }
-aside{
+/* aside{
     grid-area:aside;
-}
+} */
 nav{
     grid-area: nav;
 }
@@ -182,51 +190,20 @@ footer{
     grid-area:footer;
 }
 
-/* for tablet screens */
-@media only screen and(max-width: 900px){
-    .grid-container{
-        display:grid;
-        height:100vh;
-        /* grid-gap:10px;  */
-        /* grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-        grid-template-areas:
-            "header header header"
-            "nav main main "
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav footer footer";
-    }
-    header{
-        grid-area:header; 
-    }
 
-    nav{
-        grid-area: nav;
+/* for mobile screens and tablet screens*/
+@media screen and (max-width: 768px){
+    body{
+        font-size: 10px;
     }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area:footer;
-
-    }
-    
-}
-/* for mobile screens */
-@media only screen and(max-width: 800px){
     .grid-container{
         display:grid;
         height:100vh;
         width: 100vw;
-        /* grid-gap:10px;  */
-        /* grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 0.25fr 2fr 0.25fr;
         grid-template-areas:
             "header"
-            "nav"
             "main"
             "footer";
     }
@@ -234,9 +211,21 @@ footer{
         grid-area:header;
     }
     nav{
-        grid-area: nav;
+        display: none;
+        /* grid-area: nav;
         width: 100vw;
-        height: auto;
+        height: auto; */
+    }
+    .navbar {
+        /* z-index: 10; */
+        display: block;
+        height: 90vh;
+        overflow: scroll;
+        width: 70vw;
+        background-color: gainsboro;
+    }
+    .nav-mobile-heading{
+        display: block;
     }
     main{
         grid-area: main;
@@ -244,7 +233,27 @@ footer{
     footer{
         grid-area:footer;
     }
-    
+    .content{
+        margin:0
+    }
+    .display-demo {
+        border: 0rem solid var(--primary-color);
+        border-radius: 1rem;
+        margin: 0;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .brand-name{
+        display: none;
+    }
+    .nav-menu{
+        z-index: 10;
+        top:10vh;
+    }
+    nav{
+        overflow: scroll;
+    }
+
 }
 .horizontal-card-img {
     width: 200px;
@@ -252,4 +261,10 @@ footer{
     border-radius: 1rem;
     /* margin-top: 1rem; */
 }
-
+.navigation-bar{
+    justify-content: center;
+    align-items: center;
+}
+.aside-tab.navbar.flex.flex-direction-col {
+    width: 200px;
+}

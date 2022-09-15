@@ -22,7 +22,16 @@
         <header class="header">
             <!-- brand logo and name -->
             <div class="brand fw-600">
-                <span class="brand-name h-2">Bubble UI</span>
+                <div class="side-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <span class="brand-name h-2">
+                    <a href="../../index.html" class="no-link h-2">
+                        Bubble UI
+                    </a>
+                </span>
             </div>
             <!-- brand-links -->
             <div class="brand-link h-4 ">
@@ -34,7 +43,8 @@
             </div>
         </header>
 
-        <nav class="navbar flex flex-direction-col ">
+        <nav class="navbar flex flex-direction-col nav-menu">
+            <h3 class="nav-mobile-heading"><a class="no-link h-2" href="../../index.html"> Bubble UI</a></h3>
             <h4 class="h-4 nav-heading">
                 Getting Started
             </h4>
@@ -44,7 +54,7 @@
                 <li><a class="no-link" href="../../getting started/getting-started.html">Typography</a></li> -->
             </ul>
             <h4 class="h-4 nav-heading">
-                Input
+                Component
             </h4>
             <ul class="no-bullet para-4">
                 <li><a class="no-link " href="../alert/alert.html">Alert</a></li>
@@ -57,10 +67,11 @@
                 <li><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
                 <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
+                <li><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
+
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
                 <li class="active"><a class="no-link " href="../toast/toast.html">Toast</a></li>
                 <li><a class="no-link" href="../typography/typography.html">Typography</a></li>
-                <li><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
 
             </ul>
         </nav>
@@ -82,6 +93,13 @@
                 </div>
                 <script src="https://bubble-ui.netlify.app/Components/toast/src/toast.js"></script>
             </div>
+                <!-- display-code -->
+                <div class="code-snippet-container">
+                    <div class="code-display">
+                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-documentation%2Fblob%2F8311f9833ecc2059fdddeaa28c6675977fc6fc75%2Fcomponents%2Ftoast%2Ftoast.html%23L72-L84&style=default&type=code&showBorder=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+                        <!-- <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fkumsomi%2Fbubble-ui-documentation%2Fblob%2F8311f9833ecc2059fdddeaa28c6675977fc6fc75%2Fcomponents%2Ftoast%2Ftoast.html%23L72-L84&style=github&type=code&showFullPath=on&showCopy=on"></script> -->
+                    </div>
+                </div>
             
         </main>
 
@@ -101,6 +119,8 @@
             </ul>
         </footer>
     </div>
+    <script src="https://bubble-ui.netlify.app/Components/asidebar/src/asidebar.js"></script>
+
 </body>
 
 </html>

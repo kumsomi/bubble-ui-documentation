@@ -22,7 +22,17 @@
         <header class="header">
             <!-- brand logo and name -->
             <div class="brand fw-600">
-                <span class="brand-name h-2">Bubble UI</span>
+                <div class="side-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <span class="brand-name h-2">
+                    <a href="../../index.html" class="no-link h-2">
+                        Bubble UI
+                        </a>
+
+                </span>
             </div>
             <!-- brand-links -->
             <div class="brand-link h-4 ">
@@ -34,7 +44,8 @@
             </div>
         </header>
 
-        <nav class="navbar flex flex-direction-col ">
+        <nav class="navbar flex flex-direction-col nav-menu">
+            <h3 class="nav-mobile-heading"><a class="no-link h-2" href="../../index.html"> Bubble UI</a></h3>
             <h4 class="h-4 nav-heading">
                 Getting Started
             </h4>
@@ -57,10 +68,11 @@
                 <li><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
                 <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
+                <li><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
+
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
                 <li><a class="no-link " href="../toast/toast.html">Toast</a></li>
                 <li><a class="no-link" href="../typography/typography.html">Typography</a></li>
-                <li><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
 
             </ul>
         </nav>
@@ -333,7 +345,8 @@
             </ul>
         </footer>
     </div>
-</body>
+    <script src="https://bubble-ui.netlify.app/Components/asidebar/src/asidebar.js"></script>
+
 </body>
 
 </html>

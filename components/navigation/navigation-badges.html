@@ -23,11 +23,6 @@
         <header class="header">
             <!-- brand logo and name -->
             <div class="brand fw-600">
-                <div class="side-hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
                 <span class="brand-name h-2">
                     <a href="../../index.html" class="no-link h-2">
                         Bubble UI
@@ -43,8 +38,7 @@
             </div>
         </header>
 
-        <nav class="navbar flex flex-direction-col nav-menu">
-            <h3 class="nav-mobile-heading"><a class="no-link h-2" href="../../index.html"> Bubble UI</a></h3>
+        <nav class="navbar flex flex-direction-col ">
             <h4 class="h-4 nav-heading">
                 Getting Started
             </h4>
@@ -67,8 +61,9 @@
                 <li ><a class="no-link" href="../input/input.html">Inputs</a></li>
                 <li><a class="no-link " href="../list/list.html">Lists</a></li>
                 <li><a class="no-link " href="../modal/modal.html">Modal</a></li>
-                <li class="active"><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
-                
+                <li><a class="no-link" href="../navigation/navigation.html">Navigation</a></li>
+                <li class="active"><a class="no-link" href="../navigation/navigation-badges.html">Navigation-badges</a></li>
+                <li><a class="no-link" href="../navigation/navigation-sidebar.html">Navigation-Sidebar</a></li>
                 <li><a class="no-link " href="../rating/rating.html">Rating</a></li>
                 <li><a class="no-link " href="../toast/toast.html">Toast</a></li>
                 <li><a class="no-link" href="../typography/typography.html">Typography</a></li>
@@ -78,25 +73,44 @@
         <!-- Main content -->
         <main>
             <h1 class="heading">
-                Navigation Bar
+                Navigation with badges
             </h1>
             <div class="content"> 
                 <div class="display-demo">
-                    <nav class="navigation-bar demo-navigation">
-                        <span class="h-2">Logo</span>
-                    <!-- search options -->
-                    <div class="navigation-brand-link h-4 m-1 search">
+                <!-- Navigation with badges -->
+                <nav class="navigation-bar flex flex-wrap p-1">
+                    <span class="h-2">Logo</span>
+                    <div class="navigation-brand-link search h-4 m-1">
                         <input class="p-1 primary-color fw-600 navigation-search-input" type="text" placeholder="Search..." name="" id="">
-                        <span class="icon-btn">
-                            <i class="fas fa-search"></i>
-                        </span>
                     </div>
-                    <!-- brand-links -->
-                    <div class="navigation-brand-link h-4 ">
-                        <ul class="no-bullet m-1 spaced-list ">
-                            <li><a class="link-btn h-4 no-link fw-400 fs-l" href="#" >Link1</a></li>
-                            <li><a class="link-btn h-4 no-link" href="#" target="_blank">Link2</a></li>
+                    <div class="navigation-brand-link">
+                        <ul class="nav-menu no-bullet spaced-list mt-2">
+                            <div class="badge iconic-pills">
+                                <span class="badge-icon icon-btn"><i class="fab fa-gratipay"></i></span> 
+                                <p class="badge-text top right">24</p>  
+                            </div>
+                            <li class="menu-pills">
+                                <a class="linking link-btn h-4 no-link " href="#">Wishlist</a>
+                            </li>
+                            <div class="badge iconic-pills">
+                                <span class="badge-icon icon-btn"><i class="fas fa-shopping-cart "></i></span>
+                                <p class="badge-text top right">24</p>
+                            </div>
+                            <li class="menu-pills">
+                                <a class="linking link-btn h-4 no-link " href="#">Shopping Cart</a>
+                            </li>
+                            <div class="badge iconic-pills">
+                                <span class="badge-icon icon-btn"><i class="fas fa-user"></i></span>
+                            </div>
+                            <li class="menu-pills">
+                                <a class="linking link-btn h-4 no-link " href="#">User Login</a>
+                            </li>
                         </ul>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
                 </nav>
                 </div>
@@ -126,8 +140,6 @@
             </ul>
         </footer>
     </div>
-    <script src="https://bubble-ui.netlify.app/Components/asidebar/src/asidebar.js"></script>
-
 </body>
 </body>
 
