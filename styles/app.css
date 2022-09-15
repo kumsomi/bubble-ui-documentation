@@ -98,6 +98,9 @@ nav.navigation-bar.demo-navigation {
 .nav-mobile-heading{
     display: none;
 }
+.para-4{
+    margin:0 1.5rem;
+}
 .content{
     color:var(--black);
     /* width: 90%; */
