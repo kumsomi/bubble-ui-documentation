@@ -55,6 +55,8 @@ body {
 .navbar .nav-heading{
     font-size: 2rem;
     padding: 1rem;
+    font-weight: 800;
+    background-color: var(--secondary-color);
 }
 .navbar .no-link{
     font-size: 2rem;
