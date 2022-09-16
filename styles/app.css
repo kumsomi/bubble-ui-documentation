@@ -42,9 +42,13 @@ body {
 .brand-link {
     margin-left: auto;
 }
-
+.brand .fw-600 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
 .brand{
-    padding: 0 1rem;
+    padding: 1rem;
 }
 .nav-heading{
     margin-top: 1.5rem;
@@ -55,6 +59,8 @@ body {
 .navbar .nav-heading{
     font-size: 2rem;
     padding: 1rem;
+    font-weight: 800;
+    background-color: var(--secondary-color);
 }
 .navbar .no-link{
     font-size: 2rem;
